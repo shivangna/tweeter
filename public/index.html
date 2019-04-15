@@ -34,7 +34,14 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nisl at diam commodo ullamcorper ac eu eros. Cras semper metus sed tortor volutpat, at rhoncus velit aliquam. Suspendisse ac urna malesuada, cursus ex sed, faucibus nulla. Fusce sollicitudin suscipit mi, eget commodo sem convallis eu. Cras pretium sollicitudin nisi, a pretium risus porta sed. Curabitur magna massa, convallis lobortis lorem et, iaculis imperdiet elit. Nullam nisi eros, elementum nec justo quis, pretium pellentesque eros. Nullam luctus rhoncus magna, in posuere dolor pretium ut. Pellentesque et mi ut justo tristique faucibus eget et elit. Suspendisse non feugiat tortor. Donec sed pellentesque turpis. Donec feugiat placerat neque eu placerat. Ut aliquam lorem nisl, id posuere nunc auctor in. Praesent ac elit maximus, placerat neque sed, tempus urna. Sed rutrum pretium iaculis.</p>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action = "/tweets/" method = "POST">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
     </main>
   </body>
-</html>
+  </html>
