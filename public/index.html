@@ -20,6 +20,14 @@
     <!-- New-tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <!-- Posted-tweet CSS -->
+    <link rel="stylesheet" href="/styles/posted-tweets.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -44,14 +52,48 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action = "/tweets/" method = "POST">
-          <textarea name="tweetbox" placeholder="What are you humming about?"></textarea>
+          <textarea name="tweetbox" placeholder="What are you humming about?" value=""></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
-    </main>
+
+      <section class = "all-posted-tweets">
+        <article class="posted-tweet">
+
+
+        <header>
+          <h2 class = "username">person name</h2>
+          <h3 class = "tweeter-handle"> @shivangna </h3>
+        </header>
+
+
+        <div class = "tweet-body">
+          <p> hi this is my tweet </p>
+        </div>
+
+
+        <footer>
+         <p> <time datetime = "2019-04-17 15:00"> Apr 17 </time> </p>
+          <i class="fas fa-flag"></i>
+         <i class="fas fa-retweet"></i>
+         <i class="fas fa-heart"></i>
+
+
+
+        </footer>
+
+
+      </article>
+    </section>
+  </main>
+
+
+
   </body>
   </html>

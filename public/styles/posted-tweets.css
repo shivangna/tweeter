@@ -1,0 +1,56 @@
+.all-posted-tweets {
+  margin: 2em;
+  width: 325px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+
+.all-posted-tweets header {
+    background-color: #eee;
+    overflow: hidden;
+    width: 100%
+    opacity: 0.5;
+}
+
+.all-posted-tweets header .tweeter-handle{
+  color: rgb(122,122,122);
+  float: right;
+  padding-right:2em;
+  text-align: right;
+}
+
+
+.all-posted-tweets header .username{
+  float: left;
+  display: block;
+  color: rgb(105,125,132)
+  text-align: center;
+  padding: 14px 16px;
+}
+
+
+.all-posted.tweets body {
+      background-color: #fff;
+      padding: 20px;
+      color: rgb(42,69,80);
+}
+
+
+.all-posted-tweets footer {
+  padding: 10px;
+  background-color: #eee;
+  width: 100%;
+    padding: 0px 5px 5px 5px
+}
+
+
+
+
+.all-posted-tweets:hover header {
+  opacity: 1;
+}
+
+.all-posted-tewets:hover {
+  opacity: 1;
+}

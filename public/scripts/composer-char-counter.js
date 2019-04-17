@@ -6,9 +6,9 @@ $(document).ready(function() {
         let tweetlength = $(this).val().length;
         $('.counter',$(this).parent()).text( 140 - tweetlength);
         if (tweetlength > 140) {
-          $('.counter').parent().css('color', 'red')
+          $('.counter').css('color', 'red')
         } else {
-          $('.counter').parent().css('color', 'black')
+          $('.counter').css('color', 'black')
         }
       })
     });
