@@ -7,6 +7,10 @@
 }
 
 
+.all-posted-tweets:hover {
+  opacity: 1;
+}
+
 .all-posted-tweets header {
     background-color: #eee;
     overflow: hidden;
@@ -29,46 +33,39 @@
 
 
 .all-posted-tweets header .username{
-  display: block;
   float: left;
   color: rgb(105,125,132);
   padding: 6px;
 }
 
 
-.all-posted-tweets p {
+.all-posted-tweets .tweet-body{
       background-color: #fff;
-      padding-left: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
       color: rgb(42,69,80);
+      border-bottom-style: solid;
+      border-bottom-color: black;
 }
 
 
 .all-posted-tweets footer {
-  padding: 10px;
   background-color: #eee;
   width: 100%;
-  padding: 0px 5px 5px 5px
 }
 
-.all-posted-tweets footer i {
-  align-items: right;
+.all-posted-tweets footer .datetime {
+  float: left;
 }
 
-.all-posted-tweets footer time {
-  align-items:  left;
+.all-posted-tweets .icons{
+  visibility: hidden;
+  float: right;
+  j
 }
 
-
-
-.all-posted-tweets:hover header {
-  opacity: 1;
-}
-
-.all-posted-tweets:hover {
-  opacity: 1;
-}
-
-
-.all-posted.tweets:hover i{
+.all-posted-tweets:hover .icons{
   visibility: visible;
 }
+
+
