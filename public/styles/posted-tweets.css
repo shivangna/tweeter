@@ -3,6 +3,7 @@
   width: 325px;
   border-radius: 5px;
   border: 2px solid black;
+  opacity: 0.5;
 }
 
 
@@ -10,29 +11,34 @@
     background-color: #eee;
     overflow: hidden;
     width: 100%
-    opacity: 0.5;
+}
+
+.all-posted-tweets header .profile-pic{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    float: left;
 }
 
 .all-posted-tweets header .tweeter-handle{
   color: rgb(122,122,122);
   float: right;
-  padding-right:2em;
-  text-align: right;
+  padding-top: 10px;
+  text-align: left;
 }
 
 
 .all-posted-tweets header .username{
-  float: left;
   display: block;
-  color: rgb(105,125,132)
-  text-align: center;
-  padding: 14px 16px;
+  float: left;
+  color: rgb(105,125,132);
+  padding: 6px;
 }
 
 
-.all-posted.tweets body {
+.all-posted-tweets p {
       background-color: #fff;
-      padding: 20px;
+      padding-left: 20px;
       color: rgb(42,69,80);
 }
 
@@ -41,9 +47,16 @@
   padding: 10px;
   background-color: #eee;
   width: 100%;
-    padding: 0px 5px 5px 5px
+  padding: 0px 5px 5px 5px
 }
 
+.all-posted-tweets footer i {
+  align-items: right;
+}
+
+.all-posted-tweets footer time {
+  align-items:  left;
+}
 
 
 
@@ -51,6 +64,11 @@
   opacity: 1;
 }
 
-.all-posted-tewets:hover {
+.all-posted-tweets:hover {
   opacity: 1;
+}
+
+
+.all-posted.tweets:hover i{
+  visibility: visible;
 }
