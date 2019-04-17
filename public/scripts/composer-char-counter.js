@@ -1,8 +1,16 @@
+
 $(document).ready(function() {
     console.log('validated!');
-      $("textarea[name='tweetbox']").keypress(function(){
-        console.log("textarea[name='tweetbox']")
-  });
-});
+      $('.new-tweet textarea').on('input', function() {
+        console.log($(this));
+        let tweetlength = $(this).val().length;
+        $('.counter',$(this).parent()).text( 140 - tweetlength);
+        if (tweetlength > 140) {
+          $('.counter').parent().css('color', 'red')
+        } else {
+          $('.counter').parent().css('color', 'black')
+        }
+      })
+    });
 
 
