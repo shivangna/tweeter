@@ -66,19 +66,40 @@ const usernameElement = tweets.user.name
 const handleElement = tweets.user.handle
 const contentElement = tweets.content.text
 const profilePicElement = tweets.user.avatars.small
-const created_at = tweets.created_at
+const timeElement = tweets.created_at
 
 
-var $addProfilePic = $('<img/>').addClass('profile-pic').attr("src", profilePicElement);
-var $addUsername = $("<h2>").addClass("username").text(usernameElement);
-var $addHandle = $("<h2>").addClass("tweeter-handle").text(handleElement);
-var $addContent = $("<div>").addClass("tweet-body").text(contentElement);
-var $addTime = $("<time>").text(handleElement);
+let $tweet = $("<article>").addClass("tweet-container");
+let $header = $("<header>")
+let $addProfilePic = $('<img/>').addClass('profile-pic').attr("src", profilePicElement);
+let $addUsername = $("<h2>").addClass("username").text(usernameElement);
+let $addHandle = $("<p>").addClass("tweeter-handle").text(handleElement);
+let $addContentContainer = $("<div>").addClass("tweet-body")
+let $tweetTextContainer = $("<p>").text(contentElement);
+let $footer = $("<footer>");
+let $addTime = $("<time>").text(handleElement);
+let $icons = $("<div>").addClass("icons");
+let $iconFlag = $("<i>").addClass("fas fa-flag")
+let $iconRetweet = $("<i>").addClass("fas fa-retweet")
+let $iconHeart = $("<i>").addClass("fas fa-heart")
+
 
 
   let $result = $("<article>")
-  .addClass("posted-tweet")
-  .append($addUsername, $addHandle, $addContent, $addTime);
+  .addClass("tweet-container")
+  .append($tweet,
+          $header,
+          $addProfilePic,
+          $addUsername,
+          $addHandle,
+          $addContentContainer,
+          $tweetTextContainer,
+          $footer,
+          $addTime,
+          $icons,
+          $iconFlag,
+          $iconRetweet,
+          $iconHeart)
 
 return $result
 }
@@ -86,7 +107,7 @@ return $result
 
 function renderTweets(tweets) {
   tweets.forEach(function(tweets){
-    $("#tweet-container").append(createTweetElement(tweets));
+    $("#new-tweet-container").append(createTweetElement(tweets));
   })
 }
 

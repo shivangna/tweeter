@@ -1,4 +1,4 @@
-.all-posted-tweets {
+#new-tweet-container {
   margin: 2em;
   width: 325px;
   border-radius: 5px;
@@ -7,24 +7,24 @@
 }
 
 
-.all-posted-tweets:hover {
+#new-tweet-container:hover {
   opacity: 1;
 }
 
-.all-posted-tweets header {
+#new-tweet-container header {
     background-color: #eee;
     overflow: hidden;
     width: 100%
 }
 
-.all-posted-tweets header .profile-pic{
+#new-tweet-container header .profile-pic{
     width: 80px;
     height: 80px;
     position: relative;
     float: left;
 }
 
-.all-posted-tweets header .tweeter-handle{
+#new-tweet-container header .tweeter-handle{
   color: rgb(122,122,122);
   float: right;
   padding-top: 10px;
@@ -32,14 +32,14 @@
 }
 
 
-.all-posted-tweets header .username{
+#new-tweet-container header .username{
   float: left;
   color: rgb(105,125,132);
   padding: 6px;
 }
 
 
-.all-posted-tweets .tweet-body{
+#new-tweet-container .tweet-body{
       background-color: #fff;
       padding-left: 5px;
       padding-right: 5px;
@@ -49,22 +49,22 @@
 }
 
 
-.all-posted-tweets footer {
+#new-tweet-container footer {
   background-color: #eee;
   width: 100%;
 }
 
-.all-posted-tweets footer .datetime {
+#new-tweet-container footer .datetime {
   float: left;
 }
 
-.all-posted-tweets .icons{
+#new-tweet-container.icons{
   visibility: hidden;
   float: right;
   j
 }
 
-.all-posted-tweets:hover .icons{
+#new-tweet-container:hover .icons{
   visibility: visible;
 }
 
