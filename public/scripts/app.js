@@ -57,14 +57,14 @@ function createTweetElement(tweets) {
 
   function renderTweets(tweets) {
     tweets.forEach(function(tweets){
-      $("#new-tweet-container").append(createTweetElement(tweets));
+      $("#new-tweet-container").prepend(createTweetElement(tweets));
     })
   }
 
 
 
     $(".new-tweet form input[type='submit']").click(function(event) {
-      event.preventDefault();
+      event.preventDefault()
       console.log($("form textarea").val().length)
       if ($("form textarea").val().length > 140) {
         return alert("stop")
@@ -78,11 +78,14 @@ function createTweetElement(tweets) {
         data: $(".new-tweet form").serialize(),
         success: function(data)
         {
-          alert(data);
+          loadTweets()
         }
       })};
       return false;
     });
+
+
+
 
 
     function loadTweets () {
