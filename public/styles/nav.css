@@ -24,3 +24,19 @@
   line-height: 250%;
   text-align: center;
 }
+
+
+#nav-bar .compose {
+  background-color: #fff;
+  float: right;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 2px solid #555555;
+}
+
+
+#nav-bar .compose:hover {
+  background-color: rgb(235,252,255);
+  border: 2px solid ;
+  font color: rgb(77,161,143);
+}

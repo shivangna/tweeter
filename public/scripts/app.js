@@ -67,12 +67,17 @@ function createTweetElement(tweets) {
       event.preventDefault()
       console.log($("form textarea").val().length)
       if ($("form textarea").val().length > 140) {
-        return alert("stop")
+          $(".isa_error_long").css("visibility", "visible")
+          $(".isa_error_empty").css("visibility", "hidden")
         }
       else if ($("form textarea").val() === "" || $("form textarea").val() === null) {
-          return alert("stoppppp")
+        $(".isa_error_empty").css("visibility", "visible")
+        $(".isa_error_long").css("visibility", "hidden")
         }
-      else {$.ajax({
+      else {
+        $(".isa_error_empty").css("visibility", "hidden")
+        $(".isa_error_long").css("visibility", "hidden")
+        $.ajax({
         type: "POST",
         url: $(".new-tweet form").attr("action"),
         data: $(".new-tweet form").serialize(),

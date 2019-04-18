@@ -39,8 +39,20 @@
   float: right;
 }
 
+.isa_error_empty {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    border-radius:.5em;
+    border: 1px solid;
+    visibility: hidden;
+}
 
-
-
+.isa_error_long {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    border-radius:.5em;
+    border: 1px solid;
+    visibility: hidden;
+}
 
 
