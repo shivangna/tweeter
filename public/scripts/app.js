@@ -113,5 +113,24 @@ function renderTweets(tweets) {
 
 renderTweets(data);
 
+
+      $(".new-tweet form input[type='submit']").click(function(event) {
+        event.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: $(".new-tweet form").attr("action"),
+          data: $(".new-tweet form").serialize(),
+          success: function(data)
+          {
+          alert(data);
+        }
+         });
+    return false;
+  });
+
 })
+
+
+
+
 
