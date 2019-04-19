@@ -28,7 +28,7 @@ function createTweetElement(tweets) {
   let $addHandle = $("<p>").addClass("tweeter-handle").text(handleElement);
   let $addContentContainer = $("<div>").addClass("tweet-body")
   let $tweetTextContainer = $("<p>").text(contentElement);
-  let $footer = $("<footer>");
+  let $footer = $("<footer>").addClass('tweet-footer');
   let $addTime = $("<time>").text(handleElement);
   let $icons = $("<div>").addClass("icons");
   let $iconFlag = $("<i>").addClass("fas fa-flag")

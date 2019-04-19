@@ -2,19 +2,22 @@
   margin: 2em;
   width: 325px;
   border-radius: 5px;
-  border: 2px solid black;
-  opacity: 0.5;
+
 }
 
 
-#new-tweet-container:hover {
-  opacity: 1;
-}
+
 
 #new-tweet-container header {
     background-color: #eee;
     overflow: hidden;
     width: 100%
+}
+
+
+article {
+  border: black solid 1px;
+  margin: 0px 20px 20px;
 }
 
 #new-tweet-container header .profile-pic{
@@ -44,8 +47,6 @@
       padding-left: 5px;
       padding-right: 5px;
       color: rgb(42,69,80);
-      border-bottom-style: solid;
-      border-bottom-color: black;
 }
 
 
@@ -58,14 +59,15 @@
   float: left;
 }
 
-#new-tweet-container.icons{
+.icons {
   visibility: hidden;
   float: right;
-  j
 }
 
-#new-tweet-container:hover .icons{
-  visibility: visible;
-}
 
+
+.tweet-footer {
+  border-top: 1px solid black;
+
+}
 
