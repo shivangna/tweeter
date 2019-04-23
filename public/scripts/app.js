@@ -20,7 +20,7 @@ function createTweetElement(tweets) {
   const profilePicElement = tweets.user.avatars.small
   const timeElement = tweets.created_at
 
-
+//creates the HTML for any new tweet that is created
   let $tweet = $("<article>").addClass("tweet-container");
   let $header = $("<header>")
   let $addProfilePic = $('<img/>').addClass('profile-pic').attr("src", profilePicElement);
@@ -29,14 +29,14 @@ function createTweetElement(tweets) {
   let $addContentContainer = $("<div>").addClass("tweet-body")
   let $tweetTextContainer = $("<p>").text(contentElement);
   let $footer = $("<footer>").addClass('tweet-footer');
-  let $addTime = $("<time>").text(handleElement);
+  let $addTime = $("<time>").text(timeElement);
   let $icons = $("<div>").addClass("icons");
   let $iconFlag = $("<i>").addClass("fas fa-flag")
   let $iconRetweet = $("<i>").addClass("fas fa-retweet")
   let $iconHeart = $("<i>").addClass("fas fa-heart")
 
 
-
+//appends the HTML tags for any new tweet that is created
     let $result = $("<article>")
     .addClass("tweet-container")
     .append($tweet,
@@ -55,6 +55,7 @@ function createTweetElement(tweets) {
     return $result
   }
 
+//
   function renderTweets(tweets) {
     tweets.forEach(function(tweets){
       $("#new-tweet-container").prepend(createTweetElement(tweets));
@@ -62,7 +63,7 @@ function createTweetElement(tweets) {
   }
 
 
-
+//posts the tweet on the page. Is only rendered if the tweet is not empty and is less than 140 characters
     $(".new-tweet form input[type='submit']").click(function(event) {
       event.preventDefault()
       console.log($("form textarea").val().length)
@@ -84,6 +85,7 @@ function createTweetElement(tweets) {
         success: function(data)
         {
           loadTweets()
+          $("form textarea").val("");
         }
       })};
       return false;
@@ -92,7 +94,7 @@ function createTweetElement(tweets) {
 
 
 
-
+//get request that loads the tweets to be displayed on the page
     function loadTweets () {
       $.ajax({
         type: "GET",

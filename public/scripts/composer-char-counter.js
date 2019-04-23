@@ -1,4 +1,6 @@
 
+//function amends the character count on the new tweet based on the number of characters inputted in the textbox
+
 $(document).ready(function() {
     console.log('validated!');
       $('.new-tweet textarea').on('input', function() {
