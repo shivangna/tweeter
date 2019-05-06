@@ -14,25 +14,43 @@ html {
  * Global layout stuff
  */
 
-body {
-  margin: 0;
-  color: #244751;
-  background-color: #eee;
-  font-family: 'Roboto Condensed', sans-serif;
+ h2 {
+  margin: 0 0 1px 0;
+  border-bottom: solid 1px black;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #244751;
+  background-color: #eee;
+  margin: 0;
+}
 
 main {
-  width: 450px;
-  min-height: 1000px;
-  padding-left: 2em;
-  padding-right: 2em;
+  width: 50%;
   margin-left: 25%;
-  margin-right: 25%;
+  padding-top: 20px;
   background-color: white;
+}
+
+form {
+  padding: 10px 2px 0 2px;
+}
+
+section {
+  align-items: center;
+  margin: 0em 2em 2em 2em;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #eeeeee;
+  border: #cccccc solid 1px;
+}
+
+
+.compose {
+  margin: 10px;
+  height: 70%;
+  width: 15%;
+  float: right;
 }
 

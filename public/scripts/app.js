@@ -6,7 +6,30 @@
 
 // Test / driver code (temporary). Eventually will get this from the server.
 
+//Stack overflow function for time count:
+function timeDiff(time1, time2) {
+  const msPerMinute = 60 * 1000;
+  const msPerHour = msPerMinute * 60;
+  const msPerDay = msPerHour * 24;
+  const msPerMonth = msPerDay * 30;
+  const msPerYear = msPerDay * 365;
 
+  let diff = time1 - time2;
+
+  if (diff < msPerMinute) {
+    return Math.round(diff / 1000) + " seconds ago";
+  } else if (diff < msPerHour) {
+    return Math.round(diff / msPerMinute) + " minutes ago";
+  } else if (diff < msPerDay) {
+    return Math.round(diff / msPerHour) + " hours ago";
+  } else if (diff < msPerMonth) {
+    return Math.round(diff / msPerDay) + " days ago";
+  } else if (diff < msPerYear) {
+    return Math.round(diff / msPerMonth) + " months ago";
+  } else {
+    return Math.round(diff / msPerYear) + " years ago";
+  }
+}
 
 $(document).ready(function() {
 
@@ -18,7 +41,7 @@ function createTweetElement(tweets) {
   const handleElement = tweets.user.handle
   const contentElement = tweets.content.text
   const profilePicElement = tweets.user.avatars.small
-  const timeElement = tweets.created_at
+  const timeElement = timeDiff(Date.now(), tweets.created_at);
 
 //creates the HTML for any new tweet that is created
   let $tweet = $("<article>").addClass("tweet-container");
@@ -28,12 +51,13 @@ function createTweetElement(tweets) {
   let $addHandle = $("<p>").addClass("tweeter-handle").text(handleElement);
   let $addContentContainer = $("<div>").addClass("tweet-body")
   let $tweetTextContainer = $("<p>").text(contentElement);
-  let $footer = $("<footer>").addClass('tweet-footer');
+ 
   let $addTime = $("<time>").text(timeElement);
-  let $icons = $("<div>").addClass("icons");
   let $iconFlag = $("<i>").addClass("fas fa-flag")
   let $iconRetweet = $("<i>").addClass("fas fa-retweet")
   let $iconHeart = $("<i>").addClass("fas fa-heart")
+  let $footer = $("<footer>").addClass('tweet-footer')
+  .append($iconHeart, $iconFlag, $iconRetweet);
 
 
 //appends the HTML tags for any new tweet that is created
@@ -47,11 +71,7 @@ function createTweetElement(tweets) {
             $addContentContainer,
             $tweetTextContainer,
             $footer,
-            $addTime,
-            $icons,
-            $iconFlag,
-            $iconRetweet,
-            $iconHeart)
+            $addTime)
     return $result
   }
 

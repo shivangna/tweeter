@@ -60,8 +60,18 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action = "/tweets/" method = "POST">
-          <textarea name="tweetbox" placeholder="What are you humming about?" value=""></textarea>
-          <input type="submit" value="Tweet">
+          <textarea name="text"
+           id = "NewTweetHeader"
+           rows = "3"
+           class = "new-tweet-textbox"
+           name = "text"
+          placeholder="What are you humming about?" value=""></textarea>
+          <input 
+          type="submit" 
+          value="tweet"
+          id = "btn"
+          class = "button">
+          
           <span class="counter">140</span>
 
         <div class="isa_error_long">

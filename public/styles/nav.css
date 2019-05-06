@@ -1,42 +1,24 @@
-
-
 #nav-bar {
-  color: #e8fdff;
-  position: fixed;
-  background-color: #00a087;
+  height: 80px;
+  background-color: #00a187;
   padding-left: 2em;
   padding-right: 2em;
-  top: 0;
+  color: #e8fdff;
+  z-index: 9000;
+  position: fixed; 
+  top: 0; 
   width: 100%;
 }
-
 #nav-bar .logo {
-    width: 80px;
-    height: 80px;
-    position: relative;
-    float: left;
+  height: 80px;
+  width: 80px;
+  position: relative;
+  float: left;
 }
-
 #nav-bar .header {
-  font-size: 200%;
+  margin-left: 10px;
   position: absolute;
   float: left;
   line-height: 250%;
-  text-align: center;
-}
-
-
-#nav-bar .compose {
-  background-color: #fff;
-  float: right;
-  padding: 15px 30px;
-  border-radius: 8px;
-  border: 2px solid #555555;
-}
-
-
-#nav-bar .compose:hover {
-  background-color: rgb(235,252,255);
-  border: 2px solid ;
-  font color: rgb(77,161,143);
+  font-size: 30px;
 }

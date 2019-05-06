@@ -1,12 +1,10 @@
-section {
-  align-items: center;
-  margin: 0em 2em 2em 2em;
-  border-radius: 10px;
-  padding: 2%;
-  background-color: #eeeeee;
-  border: #cccccc solid 1px;
+.tweet-container:hover {
+  opacity: 1;
 }
 
+.tweet-container:hover span {
+  visibility: visible;
+}
 
 article {
   align-items: center;
@@ -18,34 +16,50 @@ article {
   opacity: 0.5;
 }
 
-header {
-    background-color: #f3f3f3;
+.counter {
+  position: relative;
+  bottom: -110px;
+  font-size: 18px;
+}
+
+.isa_error_long {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border-radius:.5em;
+  border: 1px solid;
+  visibility: hidden;
+}
+.isa_error_empty {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border-radius:.5em;
+  border: 1px solid;
+  visibility: hidden;
+}
+
+.tweet-header {
+  background-color: #f3f3f3;
   margin: 0 -0.5em;
   border-radius: 10px 10px 0 0;
   padding: 0.5em 0 0.5em 0;
 }
 
-.counter {
-  position: relative;
-  float: right;
-}
-
 .profile-pic {
-  height: 80px;
-  width: 80px;
-  display: inline-block;
-  margin: auto;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: left;
+  margin-left: -5px;
+  border-radius: 9px 0 0 0;
+}
+.username {
+  align-items: left;
+  margin-top: 14px;
+  margin-left: 50px;
 }
 
 .tweeter-handle {
-    text-align: right;
-}
-
-.username {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: bold;
-  margin: auto;
+  text-align: right;
 }
 
 .tweet-footer {
@@ -53,17 +67,14 @@ header {
   padding: 0.5em 0 0.5em 0;
 }
 
-.tweet-container:hover {
-  opacity: 1;
-}
-
-.icons {
+i {
   position: relative;
   padding: 2px;
   float: right;
 }
 
-.icons:hover {
+i:hover {
   position: relative;
   float: right;
 }
+
