@@ -6,6 +6,10 @@
   visibility: visible;
 }
 
+.container {
+  margin-top: 100px;
+}
+
 article {
   align-items: center;
   margin: 0em 2em 2em 2em;
@@ -23,16 +27,16 @@ article {
 }
 
 .isa_error_long {
-  color: #D8000C;
-  background-color: #FFD2D2;
-  border-radius:.5em;
+  color: #d8000c;
+  background-color: #ffd2d2;
+  border-radius: 0.5em;
   border: 1px solid;
   visibility: hidden;
 }
 .isa_error_empty {
-  color: #D8000C;
-  background-color: #FFD2D2;
-  border-radius:.5em;
+  color: #d8000c;
+  background-color: #ffd2d2;
+  border-radius: 0.5em;
   border: 1px solid;
   visibility: hidden;
 }
@@ -77,4 +81,3 @@ i:hover {
   position: relative;
   float: right;
 }
-
