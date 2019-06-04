@@ -2,7 +2,6 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
@@ -15,16 +14,12 @@ Tweeter is a simple, single-page Twitter clone.
 - Express
 - Node 5.10.x or above
 
-
-
 ## Final Product
 
 Home Page
 
-!
-!["screenshot of posted tweet"](https://github.com/shivangna/tweeter/blob/master/docs/Posted%20Tweet.png)
+- Screenshot of a posted tweet
+  !["screenshot of posted tweet"](https://github.com/shivangna/tweeter/blob/master/docs/Posted%20Tweet.png)
 
-
-!["screenshot of new tweet"](https://github.com/shivangna/tweeter/blob/master/docs/Compose%20Tweet.png)
-
-
+- Screenshot of the compose tweet area
+  !["screenshot of new tweet"](https://github.com/shivangna/tweeter/blob/master/docs/Compose%20Tweet.png)
